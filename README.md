@@ -26,6 +26,9 @@ It's the most fun part, even if you're not a developer.</br>
 Extract from the source code
 </div></br>
 
+That said, I find the visual result pleasing. Maybe I will turn this joke project into a real one. </br>
+I'm thinking of a gameplay and/or story idea to go with this little emoji world.
+
 ## Installation
 
 For the moment, Emoji RPG is only compatible with Mac OS 10.15 (Catalina) and higher.</br>
