@@ -24,15 +24,12 @@ class 📽️
 {
     static func 🛫()
     {
-        //let 🎞️ = Thread(target: self, selector: #selector(👩‍🦽(📥:)), object: 🫙)
-        let 🎞️ = Thread(target: self, selector: #selector(👩‍🦽(📥:)), object: "Blablabla")
+        let 🎞️ = Thread(target: self, selector: #selector(👩‍🦽(📥:)), object: 🫙)
         🎞️.start()
     }
 
     @objc static func 👩‍🦽(📥: String) async
     {
-        print("Main \(📥)")
-        
         while 🎲👩‍🦽 == 👍
         {
             do
