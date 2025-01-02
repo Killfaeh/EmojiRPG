@@ -2,7 +2,15 @@
 
 A tiny game coded with emojis and displayed with emojis.
 
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Installation](#installation)
+3. [How to play](#how-to-play)
+
 ![Screenshot](https://github.com/user-attachments/assets/007ac6d2-ab0a-4f26-881c-4fadca6dbe8f)
+
+## Introduction
 
 Emoji RPG is a tiny game I have developed to practice coding with the Swift language.</br>
 The game just involves walking around a randomly generated map.</br>
@@ -17,5 +25,11 @@ It's the most fun part, even if you're not a developer.</br>
 <img src="./Screenshots/codeScreenshot.png"></br>
 Extract from the source code
 </div></br>
+
+## Installation
+
+blablabla
+
+## How to use
 
 https://github.com/user-attachments/assets/dc3244f6-ba12-4552-8366-fd434f7fe157
