@@ -17,7 +17,7 @@ class 🏔️🗺️
     var 🏔️📏🏔️🎚️ = 🏔️📏🏔️.📏
     var 🔲📏 = 10
     var 🔲📐 = 10
-    var 🔲🏔️📏🏔️ = 10
+    var 🔲🏔️📏🏔️ = 16
     
     var 🔲🏔️📏🏔️📏: Int
     {
@@ -37,6 +37,10 @@ class 🏔️🗺️
     
     var 🛫🗺️: [[Double]] = []
     var 🏔️📏🏔️🗺️: [[Double]] = []
+    static var 📤🗺️: [[Double]] = []
+    
+    static var 🧮🏔️📏🏔️ = 0
+    static var 📏📏🏔️📏🏔️ = DispatchQueue(label: "🏔️📏🏔️")
     
     static func 🛠️🎢(_ 📥🎛️: [Double], _ 📥📏: Double) -> Double
     {
@@ -115,29 +119,27 @@ class 🏔️🗺️
     {
         if 🛫🗺️.count > 0
         {
+            🏔️🗺️.📏📏🏔️📏🏔️ = DispatchQueue(label: "📏🏔️📏")
+            🏔️🗺️.🧮🏔️📏🏔️ = 0
+            
             🏔️📏🏔️🗺️ = []
             
             for _ in 0..<🔲🏔️📏🏔️📏
             {
-                var 🏔️📏🏔️🗺️📐: [Double] = []
-                
-                for _ in 0..<🔲🏔️📏🏔️📐
-                {
-                    🏔️📏🏔️🗺️📐.append(0.0)
-                }
-                
+                let 🏔️📏🏔️🗺️📐 = [Double](repeating: 0.0, count: 🔲🏔️📏🏔️📐)
                 🏔️📏🏔️🗺️.append(🏔️📏🏔️🗺️📐)
             }
             
             for 👆 in 0..<🔲🏔️📏🏔️📏
             {
-                for 🖕 in 0..<🔲🏔️📏🏔️📐
+                for 🖕 in 0..<self.🔲🏔️📏🏔️📐
                 {
-                    🏔️📏🏔️🗺️[👆][🖕] = 🛠️(Double(👆), Double(🖕))
+                    self.🏔️📏🏔️🗺️[👆][🖕] = self.🛠️(Double(👆), Double(🖕))
                 }
             }
             
-            🏔️📏🏔️🗺️ = 🏔️🗺️.📐🗺️(🏔️📏🏔️🗺️)
+            let 📍🏔️📏🏔️🗺️ = 🏔️🗺️.📐🗺️(🏔️📏🏔️🗺️)
+            🏔️📏🏔️🗺️ = 📍🏔️📏🏔️🗺️
         }
     }
     
@@ -268,7 +270,7 @@ class 🏔️🗺️
         for _ in 0..<🔲🏔️📏🏔️📏
         {
             var 🛫🗺️📐: [Double] = []
-                
+            
             for _ in 0..<🔲🏔️📏🏔️📐
             {
                 🛫🗺️📐.append(Double.random(in: 0..<1))
@@ -285,44 +287,110 @@ class 🎲🗺️: 🏔️🗺️
     var 🪨 = 0.5
     var 🗺️🗺️: [🏔️🗺️] = []
     
+    var 🧮🎲🗺️ = 0
+    
+    @objc func 🛠️🎲🗺️👆(🖕: [Int])
+    {
+        let 🗺️ = 🏔️🗺️()
+        🗺️.🏔️📏🏔️🎚️ = self.🏔️📏🏔️🎚️
+        let 🖕🖕 = Int(pow(2.0, Double(🖕[0])))
+        🗺️.🔲📏 = self.🔲📏*🖕🖕
+        🗺️.🔲📐 = self.🔲📐*🖕🖕
+        🗺️.🔲🏔️📏🏔️ = self.🔲🏔️📏🏔️/🖕🖕
+        🗺️.🛠️🎲🗺️()
+        self.🗺️🗺️[🖕[0]] = 🗺️
+            
+        self.🧮🎲🗺️ += 1
+    }
+    
     override func 🛠️🎲🗺️()
     {
-        🗺️🗺️ = []
+        🧮🎲🗺️ = 0
+        
+        🗺️🗺️ = [🏔️🗺️](repeating: 🏔️🗺️(), count: 🔲🏔️📏🏔️📐)
         
         for 👆 in 0..<🔲🎼
         {
-            let 🗺️ = 🏔️🗺️()
-            🗺️.🏔️📏🏔️🎚️ = 🏔️📏🏔️🎚️
-            🗺️.🔲📏 = 🔲📏*Int(pow(2.0, Double(👆)))
-            🗺️.🔲📐 = 🔲📐*Int(pow(2.0, Double(👆)))
-            🗺️.🔲🏔️📏🏔️ = 🔲🏔️📏🏔️/Int(pow(2.0, Double(👆)))
-            🗺️.🛠️🎲🗺️()
-            🗺️🗺️.append(🗺️)
+            let 🎞️ = Thread(target: self, selector: #selector(🛠️🎲🗺️👆(🖕:)), object: [👆])
+            🎞️.start()
         }
+        
+        while 🧮🎲🗺️ < 🔲🎼
+        {
+            👩‍🦽🫙()
+        }
+    }
+    
+    func 🛠️🏔️📏🏔️👆(_ 👆: Int)
+    {
+        🏔️🗺️.📏📏🏔️📏🏔️.async
+        {
+            for 🖕 in 0..<self.🔲🏔️📏🏔️📐
+            {
+                self.🏔️📏🏔️🗺️[👆][🖕] = self.🛠️(Double(👆), Double(🖕))
+            }
+            
+            🏔️🗺️.🧮🏔️📏🏔️ += 1
+        }
+    }
+    
+    @objc func 🛠️🎼(👆🎼: [Int])
+    {
+        🗺️🗺️[👆🎼[0]].🏔️📏🏔️🗺️ = []
+        
+        for _ in 0..<🔲🏔️📏🏔️📏
+        {
+            let 🏔️📏🏔️🗺️📐 = [Double](repeating: 0.0, count: 🔲🏔️📏🏔️📐)
+            🗺️🗺️[👆🎼[0]].🏔️📏🏔️🗺️.append(🏔️📏🏔️🗺️📐)
+        }
+        
+        for 👆 in 0..<🔲🏔️📏🏔️📏
+        {
+            for 🖕 in 0..<self.🔲🏔️📏🏔️📐
+            {
+                🗺️🗺️[👆🎼[0]].🏔️📏🏔️🗺️[👆][🖕] = 🗺️🗺️[👆🎼[0]].🛠️(Double(👆), Double(🖕))
+            }
+        }
+        
+        🗺️🗺️[👆🎼[0]].🏔️📏🏔️🗺️ = 🏔️🗺️.📐🗺️(🗺️🗺️[👆🎼[0]].🏔️📏🏔️🗺️)
+        
+        🧮🎲🗺️ += 1
     }
     
     override func 🛠️🏔️📏🏔️()
     {
+        🧮🎲🗺️ = 0
+        
+        for 👆 in 0..<🔲🎼
+        {
+            let 🎞️ = Thread(target: self, selector: #selector(🛠️🎼(👆🎼:)), object: [👆])
+            🎞️.start()
+        }
+        
+        while 🧮🎲🗺️ < 🔲🎼
+        {
+            👩‍🦽🫙()
+        }
+        
+        🏔️🗺️.📏📏🏔️📏🏔️ = DispatchQueue(label: "📏🏔️📏")
+        🏔️🗺️.🧮🏔️📏🏔️ = 0
+        
         🏔️📏🏔️🗺️ = []
         
         for _ in 0..<🔲🏔️📏🏔️📏
         {
-            var 🏔️📏🏔️🗺️📐: [Double] = []
-            
-            for _ in 0..<🔲🏔️📏🏔️📐
-            {
-                🏔️📏🏔️🗺️📐.append(0.0)
-            }
-            
+            let 🏔️📏🏔️🗺️📐 = [Double](repeating: 0.0, count: 🔲🏔️📏🏔️📐)
             🏔️📏🏔️🗺️.append(🏔️📏🏔️🗺️📐)
         }
         
         for 👆 in 0..<🔲🏔️📏🏔️📏
         {
-            for 🖕 in 0..<🔲🏔️📏🏔️📐
-            {
-                🏔️📏🏔️🗺️[👆][🖕] = 🛠️(Double(👆), Double(🖕))
-            }
+            🛠️🏔️📏🏔️👆(👆)
+        }
+        
+        while 🏔️🗺️.🧮🏔️📏🏔️ < 🔲🏔️📏🏔️📏
+        {
+            👩‍🦽🫙()
         }
         
         🏔️📏🏔️🗺️ = 🏔️🗺️.📐🗺️(🏔️📏🏔️🗺️)
@@ -339,7 +407,11 @@ class 🎲🗺️: 🏔️🗺️
             for 👆 in 0..<🔲🎼
             {
                 let 🗺️ = 🗺️🗺️[👆]
-                📌 = 📌 + 🗺️.🛠️(📥📐👆, 📥📐🖕)*pow(🪨, Double(👆))
+                
+                if Int(📥📐👆) < 🗺️.🏔️📏🏔️🗺️.count && Int(📥📐🖕) < 🗺️.🏔️📏🏔️🗺️[Int(📥📐👆)].count
+                {
+                    📌 = 📌 + 🗺️.🏔️📏🏔️🗺️[Int(📥📐👆)][Int(📥📐🖕)]*pow(🪨, Double(👆))
+                }
             }
             
             👆📏 = (1.0 - pow(🪨, Double(🗺️🗺️.count)))/(1.0 - 🪨)
