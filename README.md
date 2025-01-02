@@ -35,7 +35,7 @@ Then, open it by double clicking on it.
 
 <div align="center">
 <img src="./Screenshots/archiveScreenshot.png"></br>
-Sorry for the french UI 😛
+"Téléchargements" means "Downloads". Sorry for the french UI 😛
 </div></br>
 
 ## How to play
