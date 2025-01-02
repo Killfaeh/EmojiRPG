@@ -47,8 +47,8 @@ Then, after a few seconds of initialization, the home screen appears. </br>
 
 The game runs only with keyboard, no mouse or game pad.
 
-1. Navigate in menus and walk in the map : arrows keys
-2. Validate a choice : enter
-3. Cancel or display pause menu : escape
+1. Navigate in menus and walk in the map : arrows keys ↑ ↓ ← → 
+2. Validate a choice : enter ⏎
+3. Cancel or display pause menu : escape ⎋
 
 https://github.com/user-attachments/assets/dc3244f6-ba12-4552-8366-fd434f7fe157
