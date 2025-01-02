@@ -34,7 +34,8 @@ To install it, you have to download the .zip archive [EmojiRPG-macOS-v1.0.zip](h
 Then, open it by double clicking on it.
 
 <div align="center">
-<img src="./Screenshots/archiveScreenshot.png">
+<img src="./Screenshots/archiveScreenshot.png"></br>
+Sorry for the french UI 😛
 </div></br>
 
 ## How to play
