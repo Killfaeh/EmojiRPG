@@ -36,7 +36,7 @@ If you're running the game for the first time, right-click on the EmojiRPG file 
 A popup will appear telling you that the developer is unknown and asking if you want to open the program anyway. </br>
 Click on the “Open” button.</br>
 
-A devlopper has to pay a subscription fee to Apple to get rid of this warning popup. </br>
+A developper has to pay a subscription fee to Apple to get rid of this warning popup. </br>
 I have no desire to spend $99 a year on a tiny program like that. Sorry. x) </br>
 
 If you've already run the game in the past, all you need to do is double-click on the EmojiRPG file.</br>
