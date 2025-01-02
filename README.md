@@ -32,16 +32,15 @@ blablabla
 
 ## How to play
 
-If you're running the game for the first time, right-click on the EmojiRPG file and click on “Open”. </br>
+If you are running the game for the first time, right-click on the EmojiRPG file and click on “Open”. </br>
 A popup will appear telling you that the developer is unknown and asking if you want to open the program anyway. </br>
 Click on the “Open” button.</br>
 
 A developper has to pay a subscription fee to Apple to get rid of this warning popup. </br>
 I have no desire to spend $99 a year on a tiny program like that. Sorry. x) </br>
 
-If you've already run the game in the past, all you need to do is double-click on the EmojiRPG file.</br>
+If you have already run the game in the past, all you need to do is double-click on the EmojiRPG file.</br>
 
-Ensuite, après quelques seconde d'initialisation, l'écran d'accueil apparait. </br>
 Then, after a few seconds of initialization, the home screen appears. </br>
 
 ### Controls
