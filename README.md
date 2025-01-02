@@ -30,6 +30,6 @@ Extract from the source code
 
 blablabla
 
-## How to use
+## How to play
 
 https://github.com/user-attachments/assets/dc3244f6-ba12-4552-8366-fd434f7fe157
