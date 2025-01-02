@@ -33,6 +33,10 @@ For the moment, Emoji RPG is only compatible with Mac OS 10.15 (Catalina) and hi
 To install it, you have to download the .zip archive [EmojiRPG-macOS-v1.0.zip](https://github.com/Killfaeh/EmojiRPG/raw/refs/heads/main/Releases/EmojiRPG-macOS-v1.0.zip). </br>
 Then, open it by double clicking on it.
 
+<div align="center">
+<img src="./Screenshots/archiveScreenshot.png">
+</div></br>
+
 ## How to play
 
 If you are running the game for the first time, right-click on the EmojiRPG file and click on “Open”. </br>
